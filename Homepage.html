@@ -1,14 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style/style.css" />
-    <title>Home page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jordan Reyes — Software Engineer</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>My portfolio</h1>
-    <navbar><a>About me</a><a>Projects</a><a>Contacts</a></navbar>
-    <p>My main skills are: HTML, PHP basics, Javascript basics, laravel basics, SCSS and CSS, Mysql Basics</p>
+
+<header class="top">
+  <div class="top-inner">
+    <a class="mark" href="#top">jordan<span>.</span>dev</a>
+    <nav class="links">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+
+  <section class="hero">
+    <h1>I build backend systems that stay boring under pressure.</h1>
+    <p class="lede">Software engineer focused on distributed systems and developer tooling. Currently building infrastructure at a payments company; previously at two startups that no longer exist, for unrelated reasons.</p>
+
+    <div class="term">
+      <div class="term-bar"><i></i><i></i><i></i></div>
+      <div class="term-body">
+        <div><span class="prompt">$</span> <span class="typeline">whoami --verbose</span><span class="caret"></span></div>
+        <div class="out">jordan reyes — backend, 7 yrs — Go / Rust / Postgres</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="section-head">
+      <h2>Selected work</h2>
+      <span class="count">04 projects</span>
+    </div>
+
+    <a class="project" href="#">
+      <div class="project-row">
+        <span class="project-title">Ledger</span>
+        <span class="project-year">2025</span>
+      </div>
+      <p class="project-desc">An append-only transaction ledger built for a payments team processing roughly 40M events a day, replacing a Postgres table that had outgrown itself.</p>
+      <div class="tags"><span class="tag">Go</span><span class="tag">Kafka</span><span class="tag">Postgres</span></div>
+      <span class="project-link">Read the writeup →</span>
+    </a>
+
+    <a class="project" href="#">
+      <div class="project-row">
+        <span class="project-title">Warden</span>
+        <span class="project-year">2024</span>
+      </div>
+      <p class="project-desc">A rate limiter and circuit breaker library, adopted internally after the third outage caused by an unbounded retry loop.</p>
+      <div class="tags"><span class="tag">Rust</span><span class="tag">gRPC</span></div>
+      <span class="project-link">View source →</span>
+    </a>
+
+    <a class="project" href="#">
+      <div class="project-row">
+        <span class="project-title">Fieldnotes</span>
+        <span class="project-year">2023</span>
+      </div>
+      <p class="project-desc">A CLI for capturing on-call incident notes directly from the terminal and syncing them to a shared postmortem doc.</p>
+      <div class="tags"><span class="tag">Go</span><span class="tag">SQLite</span></div>
+      <span class="project-link">View source →</span>
+    </a>
+
+    <a class="project" href="#">
+      <div class="project-row">
+        <span class="project-title">Northbound</span>
+        <span class="project-year">2021</span>
+      </div>
+      <p class="project-desc">A side project turned small business: a status page generator for indie SaaS teams who didn't want to pay enterprise prices.</p>
+      <div class="tags"><span class="tag">TypeScript</span><span class="tag">Next.js</span></div>
+      <span class="project-link">Visit site →</span>
+    </a>
+  </section>
+
+  <section id="about">
+    <div class="section-head">
+      <h2>About</h2>
+    </div>
+    <div class="about-body">
+      <p>I've spent most of my career on backend teams, usually the one paged at 3am when a queue backs up. That's shaped how I write software: fewer moving parts, clear failure modes, and logs that tell you the truth.</p>
+      <p>Outside of work I mentor two junior engineers through a local coding nonprofit, and I'm slowly working through a woodworking apprenticeship on weekends — different kind of debugging.</p>
+    </div>
+
+    <div class="diffboard">
+      <div class="diffline add"><span class="diffsign">+</span><span>strong typing, explicit errors, small diffs</span></div>
+      <div class="diffline add"><span class="diffsign">+</span><span>Go, Rust, TypeScript, SQL</span></div>
+      <div class="diffline rem"><span class="diffsign">–</span><span>clever abstractions nobody asked for</span></div>
+      <div class="diffline rem"><span class="diffsign">–</span><span>meetings that could've been a comment</span></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="big">Want to work together, or just talk shop?</h2>
+    <p>I'm open to backend and infrastructure roles, and the occasional interesting freelance project. Fastest way to reach me is email.</p>
+    <div class="contact-row">
+      <a class="btn primary" href="mailto:jordan@example.com">Email me</a>
+      <a class="btn ghost" href="#">GitHub</a>
+      <a class="btn ghost" href="#">Resume (PDF)</a>
+    </div>
+  </section>
+
+  <footer>
+    <span>Jordan Reyes, built with too much attention to line-height.</span>
+    <span>Riga, LV</span>
+  </footer>
+
+</main>
+
 </body>
 </html>
