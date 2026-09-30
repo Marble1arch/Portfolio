@@ -243,6 +243,7 @@
     nav.links{ gap: 14px; }
     .wrap{ padding: 0 20px; }
     .project-row{ flex-direction: column; gap: 4px; }
+    video{ width:100%; height:auto;}
   }
 
   @media (prefers-reduced-motion: reduce){
